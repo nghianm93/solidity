@@ -5,6 +5,8 @@ import App from "./App";
 import { TransactionsProvider } from "./context/TransactionContext";
 import "./index.css";
 
+import "typeface-montserrat";
+
 ReactDOM.render(
   <TransactionsProvider>
     <App />

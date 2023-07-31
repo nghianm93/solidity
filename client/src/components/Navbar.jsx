@@ -1,8 +1,8 @@
 import React from "react";
-import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { HiMenuAlt4 } from "react-icons/hi";
 
-import logo from "../../images/logo.png";
+import logo from "../../images/logo2.png";
 
 const NavBarItem = ({ title, classprops }) => (
   <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>
@@ -13,8 +13,9 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
-      <div className="md:flex-[0.5] flex-initial justify-center items-center">
-        <img src={logo} alt="logo" className="w-32 cursor-pointer" />
+      <div className="md:flex-[0.5] flex flex-initial justify-center items-center">
+        <img src={logo} alt="logo" className="w-8 cursor-pointer" />
+        <div className="text-xl sm:text-xl text-white text-gradient py-1 uppercase ml-4">metakrypt</div>
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
